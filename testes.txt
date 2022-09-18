@@ -1,0 +1,68 @@
+ for(var i = 0; i < result.length; i++) {
+            for(var z = 0; z < result[i].length; z++) {
+                
+                
+                document.querySelector("li").innerHTML = " "+(result[i][z] + " ");;  
+                
+                  
+            }
+            //console.log(personagem)
+           
+            
+        
+      
+    }
+    //document.querySelector('.container').innerHTML=user
+    
+})
+}
+
+
+    
+      
+const doGet = (url) =>{
+    const promiseCallback = (resolve, reject) =>{
+        fetch(url).then((response)=>{
+            if(!response.ok) throw new Error('Erro ao executar a requisição, error '+response.status);
+            return response.json();
+        })
+        .then(resolve)
+        .catch(reject);
+    }
+    return new Promise(promiseCallback);
+}
+    doGet('https://swapi.dev/api/vehicles/').then(console.log).catch(console.error);
+    
+    (async() =>{
+        const response = await fetch('https://swapi.dev/api/vehicles/')
+        const data = await response.json();
+        
+       
+        
+        for (const results in data ){
+            document.querySelector('.container').innerHTML+=(`<li>${data[results]}</li>`)
+
+            console.log(response.results)
+        }
+        
+    })()
+
+
+
+const david = {
+        nome: "David Soares Silva",
+        idade: 18
+    }
+    const diego = {
+        nome: "Diego Soares Silva",
+        idade: 17
+    }
+    const patricia = {
+        nome: "Patricia Soares Silva",
+        idade: 38
+    }
+    
+    const personagens= [david, diego, patricia];
+    for(personagem of personagens){
+        console.log(personagem)     
+    }
