@@ -28,7 +28,7 @@ span{
     background-color: transparent !important;
     color: rgb(255, 255, 255) !important;
     border: none !important;
-    border-bottom: 5px solid rgb(48, 13, 86) !important; 
+    border-bottom: 5px solid rgb(103, 0, 212) !important; 
     width: 20vw !important;
 }
 .form-control::placeholder{
