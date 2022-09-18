@@ -28,7 +28,7 @@ span{
     background-color: transparent !important;
     color: rgb(255, 255, 255) !important;
     border: none !important;
-    border-bottom: 5px solid rgb(103, 0, 212) !important; 
+    border-bottom: 5px solid rgb(139, 51, 234) !important; 
     width: 20vw !important;
 }
 .form-control::placeholder{
@@ -38,7 +38,13 @@ span{
 .container-pessoais{
     display: block;
 }
+button{
+    text-decoration: none !important;
+    font-style: normal !important;
+}
 .cadastrar{ 
+    font-style: normal;
+
     margin-top: 10px;
     background-color: rgb(146, 64, 240);
     color: white;
