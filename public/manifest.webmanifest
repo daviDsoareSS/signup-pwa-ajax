@@ -1,0 +1,19 @@
+{
+    "short_name" : " Formúlario com AJAX " ,
+    "name" : " signupAJAX " ,
+    "start_url" : "index.php" ,
+    "display" : " standalone " ,
+    "theme_color" : "#1b1c1f" ,
+    "theme-color" : "#1b1c1f" ,
+    "background_color" : "#1b1c1f" ,
+    "background-color" : "#1b1c1f" ,
+    "description" : "Cadastro de usuário feito com AJAX" ,
+    "icons" : [
+      {
+        "src" : "img/logo.png" ,
+        "type" : "image/png" ,
+        "sizes" : "1080x1080"
+        
+      }
+    ]
+  }
